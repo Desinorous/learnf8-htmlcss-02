@@ -37,7 +37,6 @@ a{
 .btn{
     display: inline-block;
     min-width: 118px;
-    border-radius: 24.5px;
     background: #171100;
     padding: 0px 16px;
     border-radius: 999px;
@@ -46,6 +45,11 @@ a{
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.75;
+}
+
+.btn:hover{
+    background: var(--primary-color);
+    opacity: 0.8;
 }
 
 .line-clamp{
@@ -232,7 +236,6 @@ a{
 .content-block .btn-watch-video{
     min-width: 180px;
     font-family: var(--font-heading1);
-    background: var(--primary-color);
     line-height: 64px;
 }
 
@@ -243,6 +246,7 @@ a{
     margin-left: 28px;
     border: none;
     background: #FFFCF4;
+    cursor: pointer;
 }
 
 .content-block .row-center span{
@@ -299,5 +303,132 @@ a{
 
 .content-block .row-down .desc strong:last-of-type{
     margin-left: 28px;
+}
+
+/* ================================ Popular ======================================== */
+.popular{
+    padding: 200px 0;
+}
+
+.popular .popular-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular .popular-top .info .title{
+    color: #171100;
+    font-family: Sen;
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.27;
+    letter-spacing: -0.76px;
+}
+
+.popular .info .desc{
+    margin-top: 16px;
+    max-width: 458px;
+    color: #5F5B53;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.67;
+}
+
+.popular .control .control-btn{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.popular .popular-down{
+    margin-top: 55px;
+    display: flex;
+    gap: 30px;
+}
+
+.popular .item-top,
+.popular .item-down{
+    margin: 16px 22px 22px 22px;
+}
+
+.popular .popular-down .item{
+    flex: 1;
+    border-radius: 12px;
+    background-color: #FFF;
+    border: 1px solid #e2dfda;
+}
+
+.popular .popular-down .item:hover{
+    border-color: transparent;
+    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+}
+
+.popular .popular-down .title{
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67; /* 166.667% */
+}
+
+.popular .popular-down .desc{
+    margin-top: 6px;   
+    max-width: 326px;
+    color: #5F5B53;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+}
+
+.popular .popular-down .picture{
+    width: 100%;
+    height: 278px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.popular .popular-down .heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular .rating{
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.popular .rating span{
+    color: #FEA31B;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.popular .popular-down .item-down{
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular .item-down strong{
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.popular .book-btn{
+    color: #FFF;
+    width: 118px;
+    height: 50px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.85;
+    border: none;
+    cursor: pointer;
 }
 
