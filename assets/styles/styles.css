@@ -132,7 +132,7 @@ a{
 /* =========================================== Hero =============================================== */
 
 .hero{
-    padding: 50px 0;
+    padding: 50px 0 65px;
     background: #FFFCF4;
 }
 .hero .body{
@@ -162,11 +162,12 @@ a{
     background: #FFF;
     box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
     width: 270px;
-    padding: 28px 0 22px 28px;
+    padding: 24px;
 }
 
 .media-block .hero-summary .item{
     display: flex;
+    align-items: center;
 }
 
 .hero-summary .item:nth-of-type(2){
