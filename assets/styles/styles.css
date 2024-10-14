@@ -118,6 +118,7 @@ a{
 .header-content .body .sign-up{
     margin-left: 70px;
     padding: 11px 41px;
+    height: 50px;
 }
 
 .header-content .body .sign-up a{
@@ -128,7 +129,8 @@ a{
     line-height: 1.75; /* 175% */
 }
 
-/* Hero */
+/* =========================================== Hero =============================================== */
+
 .hero{
     padding: 50px 0;
     background: #FFFCF4;
@@ -165,7 +167,6 @@ a{
 
 .media-block .hero-summary .item{
     display: flex;
-    /* margin: 24px 0 24px 24px; */
 }
 
 .hero-summary .item:nth-of-type(2){
@@ -178,7 +179,6 @@ a{
 
 .hero-summary .info .lable{
     color: #5F5B53;
-    font-family: Poppins;
     font-size: 1.4rem;
     font-style: normal;
     font-weight: 400;
@@ -198,6 +198,11 @@ a{
     padding-left: 120px;
 }
 
+.content-block .info{
+    margin-top: 64px;
+}
+
+
 .content-block .info .title{
     color: #171100;
     font-family: var(--font-heading2);
@@ -208,7 +213,7 @@ a{
 }
 
 .content-block .info .desc{
-    margin-top: 32px;
+    margin-top: 22px;
     color: #5F5B53;
     font-family: var(--font-heading1);
     font-size: 1.8rem;
@@ -241,7 +246,6 @@ a{
 
 .content-block .row-center span{
     color: #171100;
-    font-family: Poppins;
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.67; 
@@ -265,10 +269,9 @@ a{
 
 .content-block .row-down p{
     color: #5F5B53;
-    font-family: Poppins;
     font-size: 1.8rem;
     font-weight: 400;
-    line-height: 1.67; /* 166.667% */
+    line-height: 1.67;
 }
 
 .content-block .row-down .desc{
@@ -280,7 +283,7 @@ a{
     font-family: var(--font-heading2);
     font-size: 4.4rem;
     font-weight: 700;
-    line-height: 1.3; /* 122.727% */
+    line-height: 1.3;
 }
 
 .content-block .row-down .desc p{
@@ -296,3 +299,4 @@ a{
 .content-block .row-down .desc strong:last-of-type{
     margin-left: 28px;
 }
+
