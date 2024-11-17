@@ -510,6 +510,7 @@ a{
 /* ==================== Feature =========================== */
 .features{
     margin-top: 200px;
+    padding-bottom: 200px;
 }
 .features .features-up{
     display: flex;
@@ -593,4 +594,132 @@ a{
 .features .features-down .title, 
 .features .features-down .desc{
     max-width: 570px;
+}
+
+
+/* =============== Blog ====================== */
+.blog{
+    background: #FFFCF4;
+    padding: 96px 0;
+}
+
+.blog .intro .title{
+    color: #130606;
+    text-align: center;
+    font-family: var(--font-heading2);
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 4.8rem;
+    letter-spacing: -0.76px;
+}
+
+.blog .intro .desc{
+    margin-top: 16px;
+    color: #696262;
+    text-align: center;
+    font-family: var(--font-heading1);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    max-width: 448px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog .items{
+    display: flex;
+    margin-top: 55px;
+    gap: 30px;
+}
+
+.blog .items img{
+    width: 370px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0 ;
+}
+
+.blog .items .time{
+    display: block;
+    padding-left: 10px;
+    color: #5F5B53;
+    margin-right: 20px;
+    font-family: var(--font-heading1);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.6rem; /* 185.714% */
+}
+
+.blog .items .desc{
+    position: relative;
+    margin-top: 25px;
+    color: #171100;
+    font-family: var(--font-heading1);
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.8rem; /* 175% */
+    max-width: 330px;
+}
+
+.blog .items .desc::before{
+    position: absolute;
+    display: inline-block;
+    content: "";
+    border: 1px solid #E2DFDA;
+    top: -12px;
+    width: 160px;
+}
+
+.blog .items .info{
+    margin: 20px 20px 28px 20px;
+    position: relative;
+}
+
+.blog .items .info::before{
+    position: absolute;
+    display: inline-block;
+    content: "";
+    border: 1px solid #E2DFDA;  
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background-color: #FFB900;
+    left: 0;
+    top: 10px;
+
+}
+
+.blog .items .button{
+    margin-top: 12px;
+    font-size: 1.4rem;
+    line-height: 2.6rem; 
+    border: none;
+    padding: 12px 21px;
+}
+
+.blog .items .blog-item{
+    border-radius: 16px;
+    background: #FFF;
+}
+
+.blog .blog-item:hover{
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+
+.blog .dot{
+    display: flex;
+    gap: 3px;
+    justify-content: center;
+    margin-top: 38px;
+}
+
+.blog .dott{
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background-color: #5F5B53;
+}
+
+.blog .dot-2{
+    background-color: #FFB900;
 }
