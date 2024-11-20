@@ -747,20 +747,16 @@ a{
     display: flex;
 }
 
-.footer .logo{
+.footer .info strong{
     color: #FFF;
-    font-family: var(--font-heading2);
-    font-size: 2.4rem;
-    font-weight: 700;
-    line-height: 1.42;
+    font-family: var(--font-heading1);
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.85; /* 185.714% */
 }
 
-.footer .logo b{
-    color: #FFB900;
-    font-family: var(--font-heading2);
-    font-size: 2.4rem;
-    font-weight: 700;
-    line-height: 3.4rem;
+.footer .info .address ul li:first-of-type{
+    max-width: 231px;
 }
 
 .footer .contact .desc{
@@ -770,7 +766,7 @@ a{
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.85; /* 185.714% */
-    min-width: 267px;
+    max-width: 267px;
 }
 
 .footer .contact .social{
@@ -801,19 +797,12 @@ a{
     line-height: 1.85; /* 185.714% */
 }
 
-.footer .company{
-    margin-left: 145px;
-    min-width: 90px;
+.footer .info .column{
+    width: 21.6%;
 }
 
-.footer .support{
-    margin-left: 178px;
-    min-width: 130px;
-}
-
-.footer .address{
-    margin-left: 200px;
-    min-width: 230px;
+.footer .info .contact{
+    width: 35%;
 }
 
 .footer .title::after{
