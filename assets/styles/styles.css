@@ -445,9 +445,9 @@ a{
 
 .feedback .body{
     display: flex;
-   justify-content: space-between;
-   flex-shrink: 0;
-   width: 100%;
+    justify-content: space-between;
+    flex-shrink: 0;
+    width: 100%;
 }
 
 .feedback .dot{
@@ -509,7 +509,7 @@ a{
 
 /* ==================== Feature =========================== */
 .features{
-    margin-top: 200px;
+    padding-top: 200px;
     padding-bottom: 200px;
 }
 .features .features-up{
