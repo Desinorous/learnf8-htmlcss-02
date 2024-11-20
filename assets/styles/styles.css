@@ -522,8 +522,15 @@ a{
     gap: 30px;
 }
 
+.features .features-up .features-script{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
 .features .title{
-    margin-top: 58px;
     color: #171100;
     font-family: var(--font-heading2);
     font-size: 3.8rem;
@@ -533,11 +540,6 @@ a{
 }
 .features .desc{
     max-width: 458px;
-    margin-top: 16px;
-}
-
-.features .cre{
-    display: inline-block;
     margin-top: 16px;
 }
 
@@ -551,7 +553,7 @@ a{
 }
 
 .features .btn-feature{
-    width: 137px;
+    min-width: 137px;
     height: 50px;
     font-family: var(--font-heading1);
     display: block;
@@ -564,14 +566,11 @@ a{
     border-radius: 16px;
     background: url(<path-to-image>) lightgray 50% / cover no-repeat;
     object-fit: cover;
-}
-
-.features .features-up .image-up{
     width: 270px;
     height: 404px;
 }
 
-.features .image-up:first-of-type{
+.features .image-left{
     margin-top: 34px;
 }
 
@@ -587,8 +586,11 @@ a{
     height: 440px;
 }
 
-.features .features-down .title{
-    margin-top: 71px;
+.features .features-down-block{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .features .features-down .title, 
@@ -609,7 +611,7 @@ a{
     font-family: var(--font-heading2);
     font-size: 3.8rem;
     font-weight: 700;
-    line-height: 4.8rem;
+    line-height: 1.26;
     letter-spacing: -0.76px;
 }
 
@@ -620,7 +622,7 @@ a{
     font-family: var(--font-heading1);
     font-size: 1.6rem;
     font-weight: 400;
-    line-height: 2.8rem;
+    line-height: 1.75;
     max-width: 448px;
     margin-left: auto;
     margin-right: auto;
@@ -647,7 +649,7 @@ a{
     font-family: var(--font-heading1);
     font-size: 1.4rem;
     font-weight: 400;
-    line-height: 2.6rem; /* 185.714% */
+    line-height: 1.85; /* 185.714% */
 }
 
 .blog .items .desc{
@@ -657,7 +659,7 @@ a{
     font-family: var(--font-heading1);
     font-size: 1.6rem;
     font-weight: 600;
-    line-height: 2.8rem; /* 175% */
+    line-height: 1.75; /* 175% */
     max-width: 330px;
 }
 
@@ -692,7 +694,7 @@ a{
 .blog .items .button{
     margin-top: 12px;
     font-size: 1.4rem;
-    line-height: 2.6rem; 
+    line-height: 1.85; 
     border: none;
     padding: 12px 21px;
 }
@@ -722,4 +724,121 @@ a{
 
 .blog .dot-2{
     background-color: #FFB900;
+}
+
+/* ================================= footer ======================================== */
+.footer{
+    background-color: #2E2100;;
+}
+.footer .body{
+    padding: 96px 0 28px 0;
+}
+
+.footer .info{
+    display: flex;
+}
+
+.footer .logo{
+    color: #FFF;
+    font-family: var(--font-heading2);
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.42;
+}
+
+.footer .logo b{
+    color: #FFB900;
+    font-family: var(--font-heading2);
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 3.4rem;
+}
+
+.footer .contact .desc{
+    margin-top: 18px;
+    color: #BFBCB2;
+    font-family: var(--font-heading1);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
+    min-width: 267px;
+}
+
+.footer .contact .social{
+    display: flex;
+    margin-top: 18px;
+    gap: 20px;
+}
+
+.footer ul{
+    margin-top: 43px;
+}
+
+.footer .title{
+    position: relative;
+    color: #FFF;
+    font-family: var(--font-heading1);
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+}
+
+.footer .body li a,
+.footer li p{
+    color: #BFBCB2;
+    font-family: var(--font-heading1);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
+}
+
+.footer .company{
+    margin-left: 145px;
+    min-width: 90px;
+}
+
+.footer .support{
+    margin-left: 178px;
+    min-width: 130px;
+}
+
+.footer .address{
+    margin-left: 200px;
+    min-width: 230px;
+}
+
+.footer .title::after{
+    position: absolute;
+    content: "";
+    display: block;
+    border: 1px solid #59554B;
+    width: 130px;
+    flex-shrink: 0;
+    top: 45px;
+}
+
+.footer ul li+li{
+    margin-top: 12px;
+}
+
+.footer .copyright{
+    position: relative;
+    display: block;
+    margin-top: 67px;
+    text-align: center;
+    color: #807D74;
+    font-family: var(--font-heading1);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
+}
+
+.footer .copyright::before{
+    content: "";
+    position: absolute;
+    border: 1px solid #59554B;
+    width: 1170px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -28px;
 }
