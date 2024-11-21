@@ -45,6 +45,7 @@ a{
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.75;
+    cursor: pointer;
 }
 
 .btn:hover{
@@ -68,6 +69,8 @@ a{
 .header-fixed{
     position: sticky;
     top: -28px;
+    z-index: 1;
+
 }
 
 .header-content .content .body{
@@ -85,16 +88,9 @@ a{
     margin-left: 42px;
 }
 
-.header-content .navbar .active a{
-    color: #171100;
-    text-align: center;
-    font-size: 1.6rem;
-    font-weight: 600;
-    line-height: 1.75;
-}
-
 .header-content .navbar a:hover{
    text-shadow: 1px 0 0 currentColor;
+   color: #171100;
 }
 
 
@@ -107,7 +103,7 @@ a{
     line-height: 1.75;
 }
 
-.header-content .active a::after{
+.header-content .navbar li:hover a::after{
     position: absolute;
     display: block;
     content: "";
@@ -336,9 +332,22 @@ a{
 }
 
 .popular .control .control-btn{
-    border: none;
+    border: 2px solid #FFB900;
+    border-radius: 50%;
     background: none;
+    color: #FFB900;
     cursor: pointer;
+    height: 35px;
+    width: 35px;
+}
+
+.popular .control .control-btn+.control-btn{
+    margin-left: 12px;
+}
+
+.popular .control .control-btn:hover{
+    background-color: #FFB900;
+    color: #FFFFFF;
 }
 
 .popular .popular-down{
